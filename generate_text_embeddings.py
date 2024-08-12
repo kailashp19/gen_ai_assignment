@@ -51,3 +51,4 @@ print("Embeddings: ", embeddings)
 np.save('word_embeddings.npy', embeddings)
 
 print("Embeddings generated and saved to 'word_embeddings.npy'")
+print(f"Embeddings generated and saved to {len(embeddings[0])}")
