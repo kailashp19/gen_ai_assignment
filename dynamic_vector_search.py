@@ -14,13 +14,13 @@ nltk.download('punkt_tab')
 client = QdrantClient("http://localhost:6333")
 
 # Load model for generating embeddings
-model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+model = SentenceTransformer('BAAI/bge-large-en-v1.5')
 
 # defining the name of the collection
 collection_name = "Paris_Olympics_Gen_AI_Collection"
 
 # Load text from a file
-with open('text_files/Paris2024-QS-Athletics.txt', 'r', encoding='utf-8') as file:
+with open('sentences.txt', 'r', encoding='utf-8') as file:
     text = file.read()
 
 # Split the document into chunks (sentences in this case)
@@ -30,12 +30,14 @@ chunks = [' '.join(sentences[i:i + chunk_size]) for i in range(0, len(sentences)
 
 # Generate embeddings for each chunk
 embeddings = np.load('sentence_embeddings.npy')
-
+print(embeddings.shape[1])
 # Create a collection to store the embeddings
 client.recreate_collection(
     collection_name=collection_name,
     vectors_config=VectorParams(size=embeddings.shape[1], distance='Cosine')
 )
+
+print(embeddings[0])
 
 # Add points to the collection
 points = [
@@ -48,6 +50,7 @@ client.upsert(collection_name=collection_name, points=points)
 # Encode the query into an embedding
 query = "Define reserved athletes in 15 words from the document"
 query_embedding = model.encode([query])[0]  # Flatten the query embedding
+print(query_embedding)
 
 # Perform the search
 search_results = client.search(

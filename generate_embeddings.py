@@ -6,7 +6,7 @@ with open('text_files/Paris2024-QS-Athletics.txt', 'r', encoding='utf-8') as fil
     sentences = [line.strip() for line in file.readlines() if line.strip()]
 
 # Load a pre-trained model
-model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+model = SentenceTransformer('BAAI/bge-large-en-v1.5')
 
 # Generate embeddings
 embeddings = model.encode(sentences, show_progress_bar=True)
