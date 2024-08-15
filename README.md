@@ -98,8 +98,8 @@ A 15-minute demo session (10 minutes presentation, 5 minutes Q&A) will be conduc
 
 ## Contributors
 
-[Kirti Jain, Kailash Patel]
+[Your Name]
 
 ## License
 
-[No license yet]
+[License Reference Number]
