@@ -1,0 +1,3 @@
+pip install qdrant-client
+pip install PyMuPDF
+pip install transfomers
