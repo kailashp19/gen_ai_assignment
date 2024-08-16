@@ -36,8 +36,9 @@ GenAIProject/
 ├── README.md                   # This file
 ├── sentence_embeddings.npy     # NumPy file containing sentence embeddings
 └── sentences.txt               # Text file containing extracted sentences
+```
 
-## Setup and Installation
+### Setup and Installation
 
 1. Clone the repository
 2. Create and activate a virtual environment: python -m venv .venv
