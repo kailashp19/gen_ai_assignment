@@ -31,6 +31,7 @@ chunks = [' '.join(sentences[i:i + chunk_size]) for i in range(0, len(sentences)
 # Generate embeddings for each chunk
 embeddings = np.load('sentence_embeddings.npy')
 print(embeddings.shape[1])
+
 # Create a collection to store the embeddings
 client.recreate_collection(
     collection_name=collection_name,
