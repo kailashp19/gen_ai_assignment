@@ -20,7 +20,7 @@ model = SentenceTransformer('BAAI/bge-large-en-v1.5')
 collection_name = "Paris_Olympics_Gen_AI_Collection"
 
 # Load text from a file
-with open('sentences.txt', 'r', encoding='utf-8') as file:
+with open('text_files/Paris2024-QS-Athletics.txt', 'r', encoding='utf-8') as file:
     text = file.read()
 
 # Split the document into chunks (sentences in this case)
