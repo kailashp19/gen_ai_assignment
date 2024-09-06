@@ -5,7 +5,7 @@ import pandas as pd
 import google.generativeai as genai
 
 # Configure Google Gemini API
-genai.configure(api_key="AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg")
+genai.configure(api_key="API_KEY")
 
 def generate_prompt(invoice_text):
     prompt = (
