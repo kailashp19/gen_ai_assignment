@@ -1,33 +1,55 @@
-import fitz  # PyMuPDF
+import fitz  # PyMuPDF for PDFs
+import pytesseract  # For image to text conversion
+from PIL import Image  # Python Imaging Library for handling images
 import os
+import re
 
-# Directory containing PDF files
-pdf_dir = "PDFs"
-
-# Directory to save text files
-text_dir = "text_files"
+# Directories
+file_dir = "docs"  # Directory containing files of various formats
+text_dir = "text_files"  # Directory to save text files
 os.makedirs(text_dir, exist_ok=True)
 
+def clean_text(text):
+    """Clean and normalize extracted text, removing extra spaces but preserving newlines."""
+    text = text.strip()
+    text = re.sub(r'\s+', ' ', text)  # Replace multiple spaces with a single space
+    return text
+
 def pdf_to_text(pdf_path, text_path):
-    """Convert PDF to text and save to a file."""
+    """Convert PDF to text, clean it, and save to a file."""
     doc = fitz.open(pdf_path)
     text = ""
     
     for page_num in range(doc.page_count):
         page = doc.load_page(page_num)
-        text += page.get_text()
+        page_text = page.get_text()
+        text += clean_text(page_text) + "\n"
 
     with open(text_path, 'w', encoding='utf-8') as text_file:
         text_file.write(text)
 
-# Process each PDF in the directory
-for pdf_file in os.listdir(pdf_dir):
-    if pdf_file.lower().endswith('.pdf'):
-        pdf_path = os.path.join(pdf_dir, pdf_file)
-        text_file_name = os.path.splitext(pdf_file)[0] + '.txt'
-        text_path = os.path.join(text_dir, text_file_name)
+def image_to_text(image_path, text_path):
+    """Convert image to text using pytesseract, clean it, and save to a file."""
+    img = Image.open(image_path)
+    text = pytesseract.image_to_string(img)
+    text = clean_text(text)
 
-        print(f"Converting {pdf_path} to {text_path}")
-        pdf_to_text(pdf_path, text_path)
+    with open(text_path, 'w', encoding='utf-8') as text_file:
+        text_file.write(text)
 
-print("All PDFs have been converted to text files.")
+# Process each file in the directory
+for file_name in os.listdir(file_dir):
+    file_path = os.path.join(file_dir, file_name)
+    text_file_name = os.path.splitext(file_name)[0] + '.txt'
+    text_path = os.path.join(text_dir, text_file_name)
+
+    if file_name.lower().endswith('.pdf'):
+        print(f"Converting {file_path} to {text_path}")
+        pdf_to_text(file_path, text_path)
+    elif file_name.lower().endswith(('.jpg', '.jpeg', '.png')):
+        print(f"Converting {file_path} to {text_path}")
+        image_to_text(file_path, text_path)
+    else:
+        print(f"Unsupported file format for {file_path}")
+
+print("All files have been converted to text files with preserved newlines and no extra spaces.")
