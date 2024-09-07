@@ -7,7 +7,11 @@ load_dotenv()
 api_key = os.getenv('API_KEY')
 
 # Configure Google Gemini API
+<<<<<<< HEAD
 genai.configure(api_key='AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg')
+=======
+genai.configure(api_key="API_KEY")
+>>>>>>> 161ad0afc2f3ddaaaff1cc684f238b6f7527b860
 
 def generate_prompt_for_dataframe(invoice_text):
     prompt = (
@@ -110,6 +114,7 @@ saving_directory = "extracted_dfs"
 # Extract and save each DataFrame individually
 for invoice in invoice_texts:
     df = extract_data_as_dataframe(invoice['text'])
+<<<<<<< HEAD
     
     if not df.empty:
         # Save each DataFrame to a separate CSV file
@@ -118,3 +123,17 @@ for invoice in invoice_texts:
         print(f"DataFrame saved as {output_filename}")
     else:
         print(f"Failed to extract data for {invoice['filename']}")
+=======
+    df['filename'] = invoice['filename']
+    df_list.append(df)
+    # df_invoice = pd.DataFrame(df_list)
+print(df_list)
+
+# Concatenate all DataFrames
+if df_list:
+    final_df = pd.concat(df_list, ignore_index=True)
+    # Save to CSV
+    final_df.to_csv('extracted_invoices.csv', index=False)
+else:
+    print("No dataframes to concatenate.")
+>>>>>>> 161ad0afc2f3ddaaaff1cc684f238b6f7527b860
