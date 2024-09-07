@@ -3,6 +3,8 @@ import pytesseract  # For image to text conversion
 from PIL import Image  # Python Imaging Library for handling images
 import os
 import re
+import docx  # For handling .docx files
+from pptx import Presentation  # For handling .pptx files
 
 # Directories
 file_dir = "docs"  # Directory containing files of various formats
@@ -37,6 +39,30 @@ def image_to_text(image_path, text_path):
     with open(text_path, 'w', encoding='utf-8') as text_file:
         text_file.write(text)
 
+def docx_to_text(docx_path, text_path):
+    """Convert DOCX to text, clean it, and save to a file."""
+    doc = docx.Document(docx_path)
+    text = ""
+
+    for para in doc.paragraphs:
+        text += clean_text(para.text) + "\n"
+
+    with open(text_path, 'w', encoding='utf-8') as text_file:
+        text_file.write(text)
+
+def pptx_to_text(pptx_path, text_path):
+    """Convert PPTX to text, clean it, and save to a file."""
+    presentation = Presentation(pptx_path)
+    text = ""
+
+    for slide in presentation.slides:
+        for shape in slide.shapes:
+            if hasattr(shape, "text"):
+                text += clean_text(shape.text) + "\n"
+
+    with open(text_path, 'w', encoding='utf-8') as text_file:
+        text_file.write(text)
+
 # Process each file in the directory
 for file_name in os.listdir(file_dir):
     file_path = os.path.join(file_dir, file_name)
@@ -49,6 +75,12 @@ for file_name in os.listdir(file_dir):
     elif file_name.lower().endswith(('.jpg', '.jpeg', '.png')):
         print(f"Converting {file_path} to {text_path}")
         image_to_text(file_path, text_path)
+    elif file_name.lower().endswith('.docx'):
+        print(f"Converting {file_path} to {text_path}")
+        docx_to_text(file_path, text_path)
+    elif file_name.lower().endswith('.pptx'):
+        print(f"Converting {file_path} to {text_path}")
+        pptx_to_text(file_path, text_path)
     else:
         print(f"Unsupported file format for {file_path}")
 

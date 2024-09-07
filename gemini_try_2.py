@@ -1,15 +1,22 @@
 import os
 import pandas as pd
 import google.generativeai as genai
+from dotenv import load_dotenv
+
+load_dotenv()
+api_key = os.getenv('API_KEY')
 
 # Configure Google Gemini API
-genai.configure(api_key="AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg")
+genai.configure(api_key='AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg')
 
 def generate_prompt_for_dataframe(invoice_text):
     prompt = (
-        """CONTEXT: You are an AI assistant, and you'll be provided with documents in .txt format that contain billing invoice data.
+        """
+        CONTEXT: You are an AI assistant, and you'll be provided with documents in .txt format that contain billing invoice data.
 
-        TASK: Extract key information from the document and convert it into a format suitable for creating a DataFrame. The key information in the document will serve as column names, and their corresponding values will be the row data. 
+        TASK: 
+        Extract key information from the document and convert it into a format suitable for creating a DataFrame. 
+        The key information in the document will serve as column names, and their corresponding values will be the row data. 
 
         FORMAT:
         - You should output the data in a table-like format where each key is a column header and each corresponding value is the data for that column. 
@@ -17,11 +24,15 @@ def generate_prompt_for_dataframe(invoice_text):
         - Ensure that all column names and corresponding values are aligned.
 
         IMPORTANT:
-        1. Not all data will be separated by colons. Sometimes, multiple spaces or lines might separate key-value pairs. Handle this by treating the first clear label as the column header and its corresponding data as the value.
+        1. Not all data will be separated by colons. Sometimes, multiple spaces or lines might separate key-value pairs.
+           Handle this by treating the first clear label as the column header and its corresponding data as the value.
         2. Ignore irrelevant text such as horizontal lines, titles, and descriptions that are not part of the invoice data.
         3. Extract all essential billing information from the document, such as transaction date, invoice number, amount, tax information, and other details.
         4. If a value is missing or not present, leave the cell empty in the row.
-        
+        5. If date is present, then consider this as date instead of string. The dates can be in format like 'dd\mm\yy' or 'dd\mm\yyyy' or 'mm\dd\yyyy' or 'yyyy\mm\dd',
+           convert it to specific format 'yyyy-mm-dd'.
+        6. Infer the exact data type of the column. If integer value is present then infer the data type as integer instead of string.
+
         EXAMPLE FORMAT:
 
         | Transaction Date | Amount | GST Number | Name              | Address       | OPD No      | OPD Date    | Bill No         | Department       | Doctor          | Total  | Amount Paid |
@@ -35,6 +46,7 @@ def generate_prompt_for_dataframe(invoice_text):
         """
     ).format(invoice_text)
     return prompt
+
 def extract_data_as_dataframe(invoice_text):
     prompt = generate_prompt_for_dataframe(invoice_text)
     
@@ -94,21 +106,15 @@ def read_invoice_texts(directory):
 # Read invoice texts
 directory_path = 'text_files'
 invoice_texts = read_invoice_texts(directory_path)
-
-# Extract and store structured data as DataFrame
-df_list = []
-
+saving_directory = "extracted_dfs"
+# Extract and save each DataFrame individually
 for invoice in invoice_texts:
     df = extract_data_as_dataframe(invoice['text'])
-    df['filename'] = invoice['filename']
-    df_list.append(df)
-    # df_invoice = pd.DataFrame(df_list)
-print(df_list)
-
-# Concatenate all DataFrames
-if df_list:
-    final_df = pd.concat(df_list, ignore_index=True)
-    # Save to CSV
-    final_df.to_csv('extracted_invoices.csv', index=False)
-else:
-    print("No dataframes to concatenate.")
+    
+    if not df.empty:
+        # Save each DataFrame to a separate CSV file
+        output_filename = os.path.splitext(invoice['filename'])[0] + '_extracted.csv'
+        df.to_csv(f"{saving_directory}/{output_filename}", index=False)
+        print(f"DataFrame saved as {output_filename}")
+    else:
+        print(f"Failed to extract data for {invoice['filename']}")

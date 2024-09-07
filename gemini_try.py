@@ -4,8 +4,10 @@ import json
 import pandas as pd
 import google.generativeai as genai
 
+api_key = os.getenv('API_KEY')
+
 # Configure Google Gemini API
-genai.configure(api_key="AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg")
+genai.configure(api_key=api_key)
 
 def generate_prompt(invoice_text):
     prompt = (
