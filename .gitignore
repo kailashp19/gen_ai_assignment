@@ -3,3 +3,4 @@ __pycache__/
 myvenv/
 gen_ai_document_processing/
 .env/
+archive/

@@ -1,6 +1,2 @@
-Invoice Date,Invoice Number,Bill To,Ship To,Due Date,Description,Unit Price,Amount,Subtotal,Sales Tax,Total
----------------,----------------,----------,----------,-----------,-------------,------------,--------,----------,-----------,-------
- 2019-11-02   , us-001          , John Smith , John Smith , 2019-02-26 , Front and rear brake cables , 100.00    , 100.00 ,          ,           , 154.06 
-               ,                ,          ,          ,           , Newset of pedal arms       , 15.00     , 30.00  ,          ,           ,       
-               ,                ,          ,          ,           , Labor Shrs                , 5.00      , 15.00  ,          ,           ,       
-               ,                ,          ,          ,           ,               ,            ,        , 145.00  , 9.06     ,       
+Invoice Number,Invoice Date,Due Date,Line Items,Subtotal,Sales Tax,Tax Rate,Total,Payment Terms,Payment Method,Supplier.Name,Supplier.Address.Street,Supplier.Address.City,Supplier.Address.State,Supplier.Address.Zip,Buyer.Name,Buyer.Address.Street,Buyer.Address.City,Buyer.Address.State,Buyer.Address.Zip,Shipping Address.Street,Shipping Address.City,Shipping Address.State,Shipping Address.Zip
+us-001,11/02/2019,26/02/2019,"[{'Description': 'Front and rear brake cables', 'Unit Price': 100.0, 'Quantity': 1, 'Amount': 100.0}, {'Description': 'Newset of pedal arms', 'Unit Price': 15.0, 'Quantity': 2, 'Amount': 30.0}, {'Description': 'Labor Shrs', 'Unit Price': 5.0, 'Quantity': 3, 'Amount': 15.0}]",145.0,9.06,6.25%,154.06,Payment is due within 15 days.,Checks payable: Est Reps,East Repair Inc.,1912 Harvest Lane,New York,NY,12210,John Smith,2 Court Square,Post New York,NY,12210,3787 Pineview Drive,Cambridge,MA,12210

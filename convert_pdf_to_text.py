@@ -63,25 +63,29 @@ def pptx_to_text(pptx_path, text_path):
     with open(text_path, 'w', encoding='utf-8') as text_file:
         text_file.write(text)
 
-# Process each file in the directory
-for file_name in os.listdir(file_dir):
-    file_path = os.path.join(file_dir, file_name)
-    text_file_name = os.path.splitext(file_name)[0] + '.txt'
-    text_path = os.path.join(text_dir, text_file_name)
+def main():
+    # Process each file in the directory
+    for file_name in os.listdir(file_dir):
+        file_path = os.path.join(file_dir, file_name)
+        text_file_name = os.path.splitext(file_name)[0] + '.txt'
+        text_path = os.path.join(text_dir, text_file_name)
 
-    if file_name.lower().endswith('.pdf'):
-        print(f"Converting {file_path} to {text_path}")
-        pdf_to_text(file_path, text_path)
-    elif file_name.lower().endswith(('.jpg', '.jpeg', '.png')):
-        print(f"Converting {file_path} to {text_path}")
-        image_to_text(file_path, text_path)
-    elif file_name.lower().endswith('.docx'):
-        print(f"Converting {file_path} to {text_path}")
-        docx_to_text(file_path, text_path)
-    elif file_name.lower().endswith('.pptx'):
-        print(f"Converting {file_path} to {text_path}")
-        pptx_to_text(file_path, text_path)
-    else:
-        print(f"Unsupported file format for {file_path}")
+        if file_name.lower().endswith('.pdf'):
+            print(f"Converting {file_path} to {text_path}")
+            pdf_to_text(file_path, text_path)
+        elif file_name.lower().endswith(('.jpg', '.jpeg', '.png')):
+            print(f"Converting {file_path} to {text_path}")
+            image_to_text(file_path, text_path)
+        elif file_name.lower().endswith('.docx'):
+            print(f"Converting {file_path} to {text_path}")
+            docx_to_text(file_path, text_path)
+        elif file_name.lower().endswith('.pptx'):
+            print(f"Converting {file_path} to {text_path}")
+            pptx_to_text(file_path, text_path)
+        else:
+            print(f"Unsupported file format for {file_path}")
 
-print("All files have been converted to text files with preserved newlines and no extra spaces.")
+    print("All files have been converted to text files with preserved newlines and no extra spaces.")
+
+if __name__=="__main__":
+    main()
