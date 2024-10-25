@@ -4,3 +4,4 @@ myvenv/
 gen_ai_document_processing/
 .env/
 archive/
+gen_ai_assignment/example.db/
