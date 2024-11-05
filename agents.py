@@ -9,6 +9,7 @@ import json
 import pandas as pd
 import sqlite3
 from langchain.llms.base import LLM
+import streamlit as st
 
 api_key = os.getenv('API_KEY')
 
