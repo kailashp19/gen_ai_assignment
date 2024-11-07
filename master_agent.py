@@ -1,74 +1,133 @@
-from enum import Enum
-import google.generativeai as genai
+from langchain.tools import tool
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.messages import BaseMessage, HumanMessage
+from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_core.output_parsers import JsonOutputParser
-
-model = genai.GenerativeModel("gemini-1.5-flash")
-members = ["MarketingAnalyzer", "ErrorCodeHandler", "Communicate"]
-
-#create options map for the supervisor output parser.
-member_options = {member:member for member in members}
-
-#create Enum object
-MemberEnum = Enum('MemberEnum', member_options)
-
+from langgraph.graph import END, StateGraph, START
 from pydantic import BaseModel
+from typing import Annotated, Sequence, Literal
+from typing_extensions import TypedDict
+import functools
+import operator
+import google.generativeai as genai
+from langgraph.prebuilt import create_react_agent
 
-#force Supervisor to pick from options defined above
-# return a dictionary specifying the next agent to call 
-#under key next.
-class SupervisorOutput(BaseModel):
-    #defaults to communication agent
-    next: MemberEnum = MemberEnum.Communicate
+genai.configure(api_key='AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg')
 
+@tool("call_marketing_data_agent", return_direct=True)
+def marketing_data_agent(input: str):
+    """
+    A tool for marketing data agent.
+    """
+    return "Welcome to Marketing platform."
+
+@tool("technical_support_agent", return_direct=True)
+def technical_support_agent(input: str):
+    """
+    A tool for technical support agent.
+    """
+    return "How can I help you?"
+
+# Initialize the LLM (GenerativeModel from genai)
+llm = genai.GenerativeModel("gemini-1.5-flash")
+
+# Define the tools
+tools = [marketing_data_agent, technical_support_agent]
+
+# Define agent members
+members = ["MarketingDataAgent", "TechnicalSupportAgent", "Communicate"]
+
+# Custom function to route the user input to the correct tool or LLM
+def invoke_custom_agent(input_data):
+    # Check for specific keywords to decide which tool to invoke
+    if "marketing" in input_data.lower():
+        return marketing_data_agent(input_data)
+    elif "support" in input_data.lower():
+        return technical_support_agent(input_data)
+    else:
+        # Fallback to LLM for generic responses
+        return llm.generate_content(input_data)
+
+# Define the agent node
+def agent_node(state, agent, name):
+    # Invoke the correct agent (tool or LLM) based on `agent` provided
+    result = agent(state)
+    return {
+        "messages": [HumanMessage(content=result, name=name)]
+    }
+
+# Define system prompt and options
 system_prompt = (
-    """You are a supervisor tasked with managing a conversation between the
-    crew of workers:  {members}. Given the following user request, 
-    and crew responses respond with the worker to act next.
-    Each worker will perform a task and respond with their results and status. 
-    When finished with the task, route to communicate to deliver the result to 
-    user. Given the conversation and crew history below, who should act next?
-    Select one of: {options} 
-    \n{format_instructions}\n"""
+    "You are a supervisor tasked with managing a conversation between the"
+    " following workers: {members}. Given the following user request,"
+    " respond with the worker to act next. Each worker will perform a"
+    " task and respond with their results and status. When finished,"
+    " respond with FINISH."
 )
-# Our team supervisor is an LLM node. It just picks the next agent to process
-# and decides when the work is completed
+options = ["FINISH"] + members
 
-# Using openai function calling can make output parsing easier for us
-supervisor_parser = JsonOutputParser(pydantic_object=SupervisorOutput)
+# Define route response model
+class routeResponse(BaseModel):
+    next: Literal[*options]
 
+# Define ChatPromptTemplate for the supervisor
 prompt = ChatPromptTemplate.from_messages(
     [
         ("system", system_prompt),
         MessagesPlaceholder(variable_name="messages"),
-        MessagesPlaceholder(variable_name="agent_history")
-       
+        (
+            "system",
+            "Given the conversation above, who should act next?"
+            " Or should we FINISH? Select one of: {options}",
+        ),
     ]
-).partial(options=str(members), members=", ".join(members), 
-    format_instructions = supervisor_parser.get_format_instructions())
+).partial(options=str(options), members=", ".join(members))
 
+# Define supervisor agent function
+def supervisor_agent(state):
+    supervisor_chain = prompt | llm.generate_content(routeResponse)
+    return supervisor_chain.invoke(state)
 
-supervisor_chain = (
-    prompt | model |supervisor_parser
-)
+# Define the state class for message flow
+class AgentState(TypedDict):
+    messages: Annotated[Sequence[HumanMessage], operator.add]
+    next: str
 
-from langchain_core.messages import AIMessage
+# Example usage of the custom agent
+input_data = "I need help with marketing data analysis"
+response = invoke_custom_agent(input_data)
+print(response)
 
-# For agents in the crew 
-def crew_nodes(state, crew_member, name):
-    #read the last message in the message history.
-    input = {'messages': [state['messages'][-1]], 
-                'agent_history' : state['agent_history']}
-    result = crew_member.invoke(input)
-    #add response to the agent history.
-    return {"agent_history": [AIMessage(content= result["output"], 
-              additional_kwargs= {'intermediate_steps' : result['intermediate_steps']}, 
-              name=name)]}
+# Creating nodes with partial functions to act as graph nodes
+research_node = functools.partial(agent_node, 
+                                  agent=marketing_data_agent, 
+                                  name="MarketingDataAgent")
 
-def comms_node(state):
-    #read the last message in the message history.
-    input = {'messages': [state['messages'][-1]],
-                     'agent_history' : state['agent_history']}
-    result = comms_agent.invoke(input)
-    #respond back to the user.
-    return {"messages": [result]}
+code_node = functools.partial(agent_node, 
+                              agent=technical_support_agent, 
+                              name="TechnicalSupportAgent")
+# Store nodes in a dictionary for easy reference
+nodes = {
+    "MarketingDataAgent": research_node,
+    "TechnicalSupportAgent": code_node,
+    "supervisor": supervisor_agent,
+}
+
+# Example to manually execute the flow of messages through the nodes
+state = AgentState(messages=[HumanMessage(content="I need help with marketing data analysis")], next="MarketingDataAgent")
+
+while state["next"] != "FINISH":
+    current_node = nodes.get(state["next"])
+    if current_node is None:
+        raise ValueError(f"Node {state['next']} not found in the workflow.")
+    
+    # Process the current node
+    result = current_node(state)
+    state["messages"].extend(result["messages"])
+    
+    # Decide next action
+    state["next"] = supervisor_agent(state)["next"]
+
+# Final output
+for message in state["messages"]:
+    print(message.content)

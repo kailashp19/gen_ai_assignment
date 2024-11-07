@@ -26,7 +26,6 @@ class SQLiteTest():
     def system_prompt(self):
         system_prompt = """
                             You are a SQL query assistant. Your job is to:
-                            TASK:
                             1. Understand user input in natural language.
                             2. Generate an accurate SQL query based on the input and the given database schema.
                             3. Your response should only consist of SQL Query and no ther keywords accepted by SQL query.
@@ -147,7 +146,7 @@ class SQLiteTest():
 if __name__=="__main__":
     genai.configure(api_key='AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg')
     model = genai.GenerativeModel('gemini-1.5-flash')
-    sqliteobj = SQLiteTest('D:/Users/kaila/Personal Projects/Team_6_Gen_AI/gen_ai_capstone/gen_ai_assignment/Capstone data sets/Capstone data sets/telecom.csv')
+    sqliteobj = SQLiteTest('C:/Users/kailash.patel/Personal_Documents/GenAI_Assignment_1/gen_ai_assignment/Capstone data sets/Capstone data sets/telecom.csv')
     sqliteobj.generate_table()
     user_input = 'Can you tell me what is the total spend for the year 2024?'
     sqliteobj.process_user_query(model, user_input)
