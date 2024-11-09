@@ -68,17 +68,17 @@ def pptx_to_text(pptx_path, text_path):
     with open(text_path, 'w', encoding='utf-8') as text_file:
         text_file.write(text)
 
-def vector_db_creation(file_dir, collection_name):
-        
+def vector_db_creation(file_dir, collection_name):    
     # Load model for generating embeddings
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
     model = BertModel.from_pretrained('bert-base-uncased')
 
     # define the max length
     max_length = 128
+
     # Load text from a file
     text_file_path = os.path.join(text_dir, "Error Codes.txt")
-    print(text_file_path)
+    print("Text file path", text_file_path)
     with open("D:/Users/kaila/Personal Projects/Team_6_Gen_AI/gen_ai_capstone/gen_ai_assignment/Error Codes.txt", 'r', encoding='utf-8') as file:
         sentences = [line.strip() for line in file.readlines() if line.strip()]
 
@@ -169,13 +169,13 @@ def vector_db_creation(file_dir, collection_name):
     else:
         extracted_text = ''
 
-def main():
+def main(file_dir):
     # Process each file in the directory
     for file_name in os.listdir(file_dir):
+        print(file_name)
         file_path = os.path.join(file_dir, file_name)
         text_file_name = os.path.splitext(file_name)[0] + '.txt'
         text_path = os.path.join(text_dir, text_file_name)
-        print(text_file_name)
         if file_name.lower().endswith('.pdf'):
             print(f"Converting {file_path} to {text_path}")
             pdf_to_text(file_path, text_path)
@@ -192,7 +192,7 @@ def main():
             print(f"Unsupported file format for {file_path}")
 
     print("All files have been converted to text files with preserved newlines and no extra spaces.")
-    vector_db_creation(file_dir, collection_name)
+    vector_db_creation(text_path, collection_name)
 
 if __name__=="__main__":
 
@@ -208,4 +208,4 @@ if __name__=="__main__":
     genai.configure(api_key='AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg')
     llm = genai.GenerativeModel("gemini-1.5-flash")
 
-    main()
+    main(file_dir)
