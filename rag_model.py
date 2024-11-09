@@ -1,28 +1,20 @@
 import fitz  # PyMuPDF for PDFs
 import pytesseract  # For image to text conversion
 from PIL import Image  # Python Imaging Library for handling images
+import google.generativeai as genai
 import os
 import re
 import docx  # For handling .docx files
 from pptx import Presentation  # For handling .pptx files
-from transformers import BertTokenizer
-from torch.utils.data import DataLoader, Dataset
+from transformers import BertTokenizer, BertModel
+import torch
 import numpy as np
 import warnings
-from embedding_using_bert import Embedding, TextDatasets
 from sentence_transformers import SentenceTransformer
 warnings.filterwarnings('ignore')
-# from qdrant_client import QdrantClient
-# from qdrant_client.http.models import VectorParams, PointStruct, CreateCollection
+from qdrant_client import QdrantClient
+from qdrant_client.http.models import VectorParams, PointStruct, CreateCollection
 
-# Directories
-file_dir = "Capstone data sets/Capstone data sets"  # Directory containing files of various formats
-text_dir = "Capstone data sets/Converted text files"  # Directory to save text files
-# defining the name of the collection
-collection_name = "Technical_Support_Agent"
-# Load model for generating embeddings
-model = SentenceTransformer('BAAI/bge-large-en-v1.5')
-os.makedirs(text_dir, exist_ok=True)
 
 def clean_text(text):
     """Clean and normalize extracted text, removing extra spaces but preserving newlines."""
@@ -76,59 +68,106 @@ def pptx_to_text(pptx_path, text_path):
     with open(text_path, 'w', encoding='utf-8') as text_file:
         text_file.write(text)
 
-def vector_db_creation(text_path, collection_name, model):
+def vector_db_creation(file_dir, collection_name):
         
     # Load model for generating embeddings
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    model = BertModel.from_pretrained('bert-base-uncased')
 
+    # define the max length
+    max_length = 128
     # Load text from a file
-    with open(text_path, 'r', encoding='utf-8') as file:
-        text = file.read()
+    text_file_path = os.path.join(text_dir, "Error Codes.txt")
+    print(text_file_path)
+    with open("D:/Users/kaila/Personal Projects/Team_6_Gen_AI/gen_ai_capstone/gen_ai_assignment/Error Codes.txt", 'r', encoding='utf-8') as file:
+        sentences = [line.strip() for line in file.readlines() if line.strip()]
 
-    # getting the phrases as a list
-    text_list = text.split()
+    # f = open("D:/Users/kaila\Personal Projects/Team_6_Gen_AI/gen_ai_capstone/gen_ai_assignment/Error Codes.txt", 'r')
+    # print(f.read())
 
-    # Define chunk size (number of words per chunk)
-    chunk_size = 100  # Example: 100 words per chunk
+    # Tokenize and encode sentences
+    inputs = tokenizer(sentences, padding='max_length', truncation=True, max_length=max_length, return_tensors="pt")
 
-    # Split words into chunks and join each chunk into a single string
-    chunks = [' '.join(text_list[i:i + chunk_size]) for i in range(0, len(text_list), chunk_size)]
+    # Generate embeddings
+    with torch.no_grad():
+        outputs = model(**inputs)
+        # Use the [CLS] token representation as the sentence embedding
+        embeddings = outputs.last_hidden_state[:, 0, :].numpy()
+    
+    # Save embeddings to a file
+    np.save('fixed_length_embeddings.npy', embeddings)
 
-    # Now `chunks` contains the words from the file split into chunks
-    print(f"Number of chunks: {len(chunks)}")
-    print(chunks)
-    print(chunks[:2])  # Print the first two chunks as an example
+    print("Embeddings generated and saved.")
+    print(f"Length of each embedding: {embeddings.shape[0]}")
 
-    # Generate embeddings for each chunk
-    doc_embeddings = np.load('embeddings_from_bert_transformers.npy')
-    print("Embeddings shape: ", doc_embeddings.shape[0])
+    vector_size = embeddings.shape[1]  # Should be 768 for 'bert-base-uncased'
+    distance_metric = "Cosine"  # Change to "Dot" or "Euclidean" if needed
 
-    # passing the query
-    query = "Who are reserved athletes"
+    # Connect to the Qdrant service
+    client = QdrantClient("http://localhost:6333")
 
-    # tokenize the text from the text file
-    tokens = tokenizer.encode(query, add_special_tokens=True)
-    max_length = min(len(tokens), 512)
-    print(max_length)
-    tokens = tokens[:max_length]
-    print("Tokens: ", tokens)
+    # Create collection in Qdrant
+    client.recreate_collection(
+        collection_name=collection_name,
+        vectors_config=VectorParams(size=vector_size, distance=distance_metric),
+    )
 
-    fde = None
+    # Prepare and upload embeddings to Qdrant
+    points = [
+        PointStruct(id=i, vector=embedding.tolist(), payload={"text": sentences[i]})
+        for i, embedding in enumerate(embeddings)
+    ]
 
-    # converting 2D array to 1D
-    fde = doc_embeddings.flatten()
+    client.upsert(collection_name=collection_name, points=points)
 
-    # Create a collection to store the embeddings
-    # client.recreate_collection(
-    #     collection_name=collection_name,
-    #     vectors_config=VectorParams(size=fde.shape[0], distance='Cosine')
-    # )
+    # Encode the query into an embedding
+    query = "I am getting an error as 1333"
+    
+    # Tokenize and generate query embedding
+    query_inputs = tokenizer(query, padding='max_length', truncation=True, max_length=128, return_tensors="pt")
 
-    # # Add points to the collection
-    # points = [
-    #     PointStruct(id=i, vector=embedding, payload={"document": doc})
-    #     for i, (embedding, doc) in enumerate(zip(fde, chunks))
-    # ]
+    with torch.no_grad():
+        query_outputs = model(**query_inputs)
+        query_embedding = query_outputs.last_hidden_state[:, 0, :].numpy()
+
+    # Perform the search in Qdrant
+    search_results = client.search(
+        collection_name=collection_name,
+        query_vector=query_embedding[0],  # Extract the first vector from the batch
+        limit=3  # Retrieve multiple results for context
+    )
+
+    # Retrieve the top result text chunks for context
+    context_texts = [result.payload["text"] for result in search_results]
+
+    context_prompt = f"""You are provided with a document in .txt format and your task is to provide a solution to a user coming with problem
+    for tehcnical issue from a document.
+    For Example:
+    User query: I am getting an error as 1333
+    output: 
+    Here is a recommended solution
+    Verify the Joey is active on the customer account   
+    Perform a front panel reset on the Joey and Hopper
+    Ensure the Joey is linked to the Hopper in SETTINGS > WHOLE HOME
+    Inspect the signal path starting at the Joey and working back toward the Hub/Node:\n\n"""
+
+    for i, text in enumerate(context_texts, start=1):
+        context_prompt += f"Context {i}: {text}\n\n"""
+
+    context_prompt += f"Question: {query}\nAnswer:"
+
+    # Call Gemini API to generate the response
+    gemini_response = llm.generate_content(context_prompt)
+
+    # Display the generated response
+    print("\nGemini Response:")
+    # print(gemini_response["text"])
+
+    if gemini_response.candidates:
+        extracted_text = gemini_response.text.strip('```json').strip('```').strip()
+        print(f"Extracted text: {extracted_text}")  # Debugging purpose
+    else:
+        extracted_text = ''
 
 def main():
     # Process each file in the directory
@@ -136,7 +175,7 @@ def main():
         file_path = os.path.join(file_dir, file_name)
         text_file_name = os.path.splitext(file_name)[0] + '.txt'
         text_path = os.path.join(text_dir, text_file_name)
-
+        print(text_file_name)
         if file_name.lower().endswith('.pdf'):
             print(f"Converting {file_path} to {text_path}")
             pdf_to_text(file_path, text_path)
@@ -153,6 +192,20 @@ def main():
             print(f"Unsupported file format for {file_path}")
 
     print("All files have been converted to text files with preserved newlines and no extra spaces.")
-    vector_db_creation(text_path, collection_name, model)
+    vector_db_creation(file_dir, collection_name)
+
 if __name__=="__main__":
+
+    # Directories
+    file_dir = "Capstone data sets"  # Directory containing files of various formats
+    text_dir = "Converted text files"  # Directory to save text files
+    os.makedirs(text_dir, exist_ok=True)
+
+    # defining the name of the collection
+    collection_name = "Technical_Support_Agent"
+
+    # Configure Google Gemini API
+    genai.configure(api_key='AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg')
+    llm = genai.GenerativeModel("gemini-1.5-flash")
+
     main()

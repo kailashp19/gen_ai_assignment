@@ -19,14 +19,16 @@ def marketing_data_agent(input: str):
     """
     A tool for marketing data agent.
     """
-    return "Welcome to Marketing platform."
+    response = llm.generate_content(input)
+    return response
 
 @tool("technical_support_agent", return_direct=True)
 def technical_support_agent(input: str):
     """
     A tool for technical support agent.
     """
-    return "How can I help you?"
+    response = llm.generate_content(input)
+    return response
 
 # Initialize the LLM (GenerativeModel from genai)
 llm = genai.GenerativeModel("gemini-1.5-flash")
@@ -99,17 +101,17 @@ response = invoke_custom_agent(input_data)
 print(response)
 
 # Creating nodes with partial functions to act as graph nodes
-research_node = functools.partial(agent_node, 
+data_analysis_node = functools.partial(agent_node, 
                                   agent=marketing_data_agent, 
                                   name="MarketingDataAgent")
 
-code_node = functools.partial(agent_node, 
+technical_support_node = functools.partial(agent_node, 
                               agent=technical_support_agent, 
                               name="TechnicalSupportAgent")
 # Store nodes in a dictionary for easy reference
 nodes = {
-    "MarketingDataAgent": research_node,
-    "TechnicalSupportAgent": code_node,
+    "MarketingDataAgent": data_analysis_node,
+    "TechnicalSupportAgent": technical_support_node,
     "supervisor": supervisor_agent,
 }
 
