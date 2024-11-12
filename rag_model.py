@@ -14,7 +14,9 @@ from sentence_transformers import SentenceTransformer
 warnings.filterwarnings('ignore')
 from qdrant_client import QdrantClient
 from qdrant_client.http.models import VectorParams, PointStruct, CreateCollection
-
+from docx.opc.exceptions import PackageNotFoundError
+import nltk
+from nltk import sent_tokenize
 
 def clean_text(text):
     """Clean and normalize extracted text, removing extra spaces but preserving newlines."""
@@ -46,14 +48,18 @@ def image_to_text(image_path, text_path):
 
 def docx_to_text(docx_path, text_path):
     """Convert DOCX to text, clean it, and save to a file."""
-    doc = docx.Document(docx_path)
-    text = ""
-
-    for para in doc.paragraphs:
-        text += clean_text(para.text) + "\n"
-
-    with open(text_path, 'w', encoding='utf-8') as text_file:
-        text_file.write(text)
+    try:
+        doc = docx.Document(docx_path)
+        text = ""
+        for para in doc.paragraphs:
+            text += clean_text(para.text) + "\n"
+        
+        with open(text_path, 'w', encoding='utf-8') as text_file:
+            text_file.write(text)
+    except PackageNotFoundError as e:
+        print(f"PackageNotFoundError: {e} - The file {docx_path} is not valid or is corrupted.")
+    except Exception as e:
+        print(f"Error processing file {docx_path}: {e}")
 
 def pptx_to_text(pptx_path, text_path):
     """Convert PPTX to text, clean it, and save to a file."""
@@ -68,80 +74,66 @@ def pptx_to_text(pptx_path, text_path):
     with open(text_path, 'w', encoding='utf-8') as text_file:
         text_file.write(text)
 
-def vector_db_creation(file_dir, collection_name):    
-    # Load model for generating embeddings
-    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-    model = BertModel.from_pretrained('bert-base-uncased')
+def vector_db_creation(text_dir, collection_name):    
 
-    # define the max length
-    max_length = 128
-
-    # Load text from a file
-    text_file_path = os.path.join(text_dir, "Error Codes.txt")
-    print("Text file path", text_file_path)
-    with open("D:/Users/kaila/Personal Projects/Team_6_Gen_AI/gen_ai_capstone/gen_ai_assignment/Error Codes.txt", 'r', encoding='utf-8') as file:
-        sentences = [line.strip() for line in file.readlines() if line.strip()]
-
-    # f = open("D:/Users/kaila\Personal Projects/Team_6_Gen_AI/gen_ai_capstone/gen_ai_assignment/Error Codes.txt", 'r')
-    # print(f.read())
-
-    # Tokenize and encode sentences
-    inputs = tokenizer(sentences, padding='max_length', truncation=True, max_length=max_length, return_tensors="pt")
+    with open(f"{text_dir}/Error Codes.txt", 'r', encoding='utf-8') as file:
+        text = file.read()
+    
+    # Split the document into chunks (sentences in this case)
+    sentences = sent_tokenize(text)
+    chunk_size = 128  # Adjust chunk size as needed
+    chunks = [' '.join(sentences[i:i + chunk_size]) for i in range(0, len(sentences), chunk_size)]
 
     # Generate embeddings
-    with torch.no_grad():
-        outputs = model(**inputs)
-        # Use the [CLS] token representation as the sentence embedding
-        embeddings = outputs.last_hidden_state[:, 0, :].numpy()
-    
+    embeddings = model.encode(chunks, show_progress_bar=True)
+
+    # Convert to a NumPy array
+    embeddings = np.array(embeddings)
+
     # Save embeddings to a file
-    np.save('fixed_length_embeddings.npy', embeddings)
+    np.save('sentence_embeddings.npy', embeddings)
 
-    print("Embeddings generated and saved.")
-    print(f"Length of each embedding: {embeddings.shape[0]}")
+    print(embeddings.shape[1])
 
-    vector_size = embeddings.shape[1]  # Should be 768 for 'bert-base-uncased'
-    distance_metric = "Cosine"  # Change to "Dot" or "Euclidean" if needed
-
-    # Connect to the Qdrant service
-    client = QdrantClient("http://localhost:6333")
-
-    # Create collection in Qdrant
+    # Create a collection to store the embeddings
     client.recreate_collection(
         collection_name=collection_name,
-        vectors_config=VectorParams(size=vector_size, distance=distance_metric),
+        vectors_config=VectorParams(size=embeddings.shape[1], distance='Cosine')
     )
 
-    # Prepare and upload embeddings to Qdrant
+    # Add points to the collection
     points = [
-        PointStruct(id=i, vector=embedding.tolist(), payload={"text": sentences[i]})
-        for i, embedding in enumerate(embeddings)
+        PointStruct(id=i, vector=embedding, payload={"document": doc})
+        for i, (embedding, doc) in enumerate(zip(embeddings, chunks))
     ]
 
     client.upsert(collection_name=collection_name, points=points)
 
     # Encode the query into an embedding
-    query = "I am getting an error as 1333"
-    
-    # Tokenize and generate query embedding
-    query_inputs = tokenizer(query, padding='max_length', truncation=True, max_length=128, return_tensors="pt")
+    query = "Could you please provide me what is the solution for error code 021?"
+    query_embedding = model.encode([query])[0]  # Flatten the query embedding
+    print(query_embedding)
 
-    with torch.no_grad():
-        query_outputs = model(**query_inputs)
-        query_embedding = query_outputs.last_hidden_state[:, 0, :].numpy()
-
-    # Perform the search in Qdrant
+    # Perform the search
     search_results = client.search(
         collection_name=collection_name,
-        query_vector=query_embedding[0],  # Extract the first vector from the batch
-        limit=3  # Retrieve multiple results for context
+        query_vector=query_embedding,
+        limit=1  # Number of nearest neighbors to return
     )
 
-    # Retrieve the top result text chunks for context
-    context_texts = [result.payload["text"] for result in search_results]
+    # Display the search results
+    print("\nSearch Results:")
+    for idx, result in enumerate(search_results, start=1):
+        text_chunk = result.payload.get("document", "No text found")
+        score = result.score
+        print(f"{idx}. Response: {text_chunk}\n   Score: {score:.4f}\n")
 
-    context_prompt = f"""You are provided with a document in .txt format and your task is to provide a solution to a user coming with problem
-    for tehcnical issue from a document.
+    # Retrieve the top result text chunks for context
+    context_texts = search_results
+
+    context_prompt = f"""
+    You are provided with a document in .txt format and your task is to provide a solution to a user coming with problem
+    for tehcnical issue from a document {search_results}.
     For Example:
     User query: I am getting an error as 1333
     output: 
@@ -149,7 +141,8 @@ def vector_db_creation(file_dir, collection_name):
     Verify the Joey is active on the customer account   
     Perform a front panel reset on the Joey and Hopper
     Ensure the Joey is linked to the Hopper in SETTINGS > WHOLE HOME
-    Inspect the signal path starting at the Joey and working back toward the Hub/Node:\n\n"""
+    Inspect the signal path starting at the Joey and working back toward the Hub/Node:
+    {query}\n\n"""
 
     for i, text in enumerate(context_texts, start=1):
         context_prompt += f"Context {i}: {text}\n\n"""
@@ -169,13 +162,15 @@ def vector_db_creation(file_dir, collection_name):
     else:
         extracted_text = ''
 
-def main(file_dir):
+def main():
     # Process each file in the directory
     for file_name in os.listdir(file_dir):
-        print(file_name)
+        print(file_dir)
         file_path = os.path.join(file_dir, file_name)
         text_file_name = os.path.splitext(file_name)[0] + '.txt'
         text_path = os.path.join(text_dir, text_file_name)
+        print(file_path)
+        print(file_name)
         if file_name.lower().endswith('.pdf'):
             print(f"Converting {file_path} to {text_path}")
             pdf_to_text(file_path, text_path)
@@ -192,14 +187,20 @@ def main(file_dir):
             print(f"Unsupported file format for {file_path}")
 
     print("All files have been converted to text files with preserved newlines and no extra spaces.")
-    vector_db_creation(text_path, collection_name)
+    vector_db_creation(text_dir, collection_name)
 
 if __name__=="__main__":
+    nltk.download('punkt_tab')
 
     # Directories
     file_dir = "Capstone data sets"  # Directory containing files of various formats
     text_dir = "Converted text files"  # Directory to save text files
     os.makedirs(text_dir, exist_ok=True)
+
+    # Connect to the Qdrant service
+    client = QdrantClient("http://localhost:6333")
+    
+    model = SentenceTransformer('BAAI/bge-large-en-v1.5')
 
     # defining the name of the collection
     collection_name = "Technical_Support_Agent"
@@ -208,4 +209,4 @@ if __name__=="__main__":
     genai.configure(api_key='AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg')
     llm = genai.GenerativeModel("gemini-1.5-flash")
 
-    main(file_dir)
+    main()
