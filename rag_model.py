@@ -74,7 +74,7 @@ def pptx_to_text(pptx_path, text_path):
     with open(text_path, 'w', encoding='utf-8') as text_file:
         text_file.write(text)
 
-def vector_db_creation(text_dir, collection_name):    
+def vector_db_creation(text_dir, client, model, collection_name, llm):    
 
     with open(f"{text_dir}/Error Codes.txt", 'r', encoding='utf-8') as file:
         text = file.read()
@@ -162,7 +162,7 @@ def vector_db_creation(text_dir, collection_name):
     else:
         extracted_text = ''
 
-def main():
+def main(file_dir, text_dir, client, model, collection_name, llm):
     # Process each file in the directory
     for file_name in os.listdir(file_dir):
         print(file_dir)
@@ -187,7 +187,7 @@ def main():
             print(f"Unsupported file format for {file_path}")
 
     print("All files have been converted to text files with preserved newlines and no extra spaces.")
-    vector_db_creation(text_dir, collection_name)
+    vector_db_creation(text_dir, client, model, collection_name, llm)
 
 if __name__=="__main__":
     nltk.download('punkt_tab')
@@ -204,9 +204,6 @@ if __name__=="__main__":
 
     # defining the name of the collection
     collection_name = "Technical_Support_Agent"
-
-    # Configure Google Gemini API
-    genai.configure(api_key='AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg')
     llm = genai.GenerativeModel("gemini-1.5-flash")
 
-    main()
+    main(file_dir, text_dir, client, model, collection_name, llm)

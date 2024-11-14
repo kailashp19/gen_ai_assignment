@@ -1,6 +1,4 @@
-import ast
 import os
-from pathlib import Path
 import json
 import pandas as pd
 import google.generativeai as genai
@@ -149,16 +147,13 @@ def read_data(directory):
 
 def main():
     directory = 'Converted text files'
-    # df = read_data("Capstone data sets")
-    data_directory = 'Capstone data sets'
+    df = read_data("Capstone data sets")
+
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
             with open(os.path.join(directory, filename), 'r', encoding='utf-8') as file:
                 formula_sheet = file.read()
-    for filename in os.listdir(data_directory):
-        if filename.endswith(".csv"):
-            with open(os.path.join(data_directory, filename), 'r', encoding='utf-8') as file:
-                df = file.read()
+                
     user_query = "What were the dates where total ad spend exceeded 400000, sales were above 100000, and dollar-to-pound exchange rate was below 0.75?"
     response = extract_structured_data_gemini(df, formula_sheet, user_query)
     print(response)
