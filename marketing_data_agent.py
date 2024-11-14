@@ -20,13 +20,14 @@ def generate_response(df, formula_sheet, user_query):
 
         REMEMBER:
         1. *Accuracy is crucial*. Double-check all extracted information based on the user query.
-        2. *Respond with proper currency value*
+        2. *Respond with proper currency value* if needed.
         3. Sometimes user might ask to query to get the particular set of records, and you should be able to analyze the data
         and produce the result as a table with each record on a new line, including column names in the first line.
         4. If you are provided with multiple files representing different kinds of data, you should be able to interpret the user
         query, which might span across multiple files, analyze the data from multiple files, and produce the result.
         5. *Derived KPI values* like profit, turnover, etc., should use the formula.txt file.
         6. *Null/blank* values in the data should be replaced with 0.
+        7. *Date* is provided in yyyy-mm-dd format.
 
         ADDITIONAL INFORMATION:
         1. *Identify and extract key details* like date, investments, returns, profits, discounts, interest rates, dollar to pound, pound to dollar, INR to dollar, Google ad spend, Facebook ad spend, offline marketing expenses, etc.
@@ -36,6 +37,8 @@ def generate_response(df, formula_sheet, user_query):
         - spend/profit/discount/revenue
         - currency conversion
         4. *Only convert amount to specific currency* if the user's request specifies a currency value and the data contains a column with the converted value; otherwise, respond with the non-converted value.
+        5. Whenever asked total value\overall value, you should be able to aggregate the numbers and return a single value.
+        6. If asked for a particular month\year\date and data is not present in the dataframe, then you should not generate the response.
 
         RESPONSE FORMAT:
         - Provide results in a *tabular format with each record on a separate line*, with column names in the first row.
@@ -56,6 +59,11 @@ def generate_response(df, formula_sheet, user_query):
         2024-10-06,5012,4692,399029.574233258,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1307.08,198468.8,0,12136.17,0,0,0,0,0,0,5186.96,0,0,0,0,0,0,42352.75,0.761600017547607,3.98
         2024-10-05,7440,7056,388140.422419238,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1731.77,178238.08,0,17851.88,0,0,0,0,0,0,5101.41,0,0,0,0,0,0,42352.75,0.761600017547607,3.98
 
+        1. USER QUERY:
+        What is total profit from 2024-10-14 to 2024-10-05
+        RESPONSE:
+        Total Profit
+        12345
 
         1. USER QUERY:
         What were the dates where total ad spend exceeded 350,000, sales were above 6000, and dollar-to-pound exchange rate was below 0.765?
@@ -153,8 +161,9 @@ def main():
         if filename.endswith(".txt"):
             with open(os.path.join(directory, filename), 'r', encoding='utf-8') as file:
                 formula_sheet = file.read()
-                
-    user_query = "What were the dates where total ad spend exceeded 400000, sales were above 100000, and dollar-to-pound exchange rate was below 0.75?"
+
+    # user_query = "What were the dates where total ad spend exceeded 400000, sales were above 100000, and dollar-to-pound exchange rate was below 0.75?"
+    user_query = "What is the total sales in nov 2024?"
     response = extract_structured_data_gemini(df, formula_sheet, user_query)
     print(response)
 

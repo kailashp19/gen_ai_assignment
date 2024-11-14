@@ -110,7 +110,7 @@ def vector_db_creation(text_dir, client, model, collection_name, llm):
     client.upsert(collection_name=collection_name, points=points)
 
     # Encode the query into an embedding
-    query = "Could you please provide me what is the solution for error code 021?"
+    query = "Could you please provide me what is the solution for error code 001?"
     query_embedding = model.encode([query])[0]  # Flatten the query embedding
     print(query_embedding)
 
@@ -204,6 +204,9 @@ if __name__=="__main__":
 
     # defining the name of the collection
     collection_name = "Technical_Support_Agent"
+    
+    # Configure Google Gemini API
+    genai.configure(api_key='AIzaSyAt8gpOAHgwzOGOhpJATz88vxMeeM1q2Lg')
     llm = genai.GenerativeModel("gemini-1.5-flash")
 
     main(file_dir, text_dir, client, model, collection_name, llm)
