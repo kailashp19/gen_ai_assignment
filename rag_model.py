@@ -5,6 +5,7 @@ from qdrant_client import QdrantClient
 from qdrant_client.http.models import VectorParams, PointStruct
 from docx.opc.exceptions import PackageNotFoundError
 from nltk import sent_tokenize
+from sklearn.metrics.pairwise import cosine_similarity
 import fitz  # PyMuPDF for PDFs
 import pytesseract  # For image to text conversion
 import google.generativeai as genai
@@ -25,7 +26,7 @@ class RAGPRocessing():
     to search for the result from the vector database. the searched results are then passed to system prompt and LLM to generate the
     response of the uer query for the technical issues.
     """
-    def __init__(self, file_dir: str, text_dir: str, client: str, model: str, collection_name: str, user_query: str, chunk_size: int, llm: str) -> None:
+    def __init__(self, file_dir: str, text_dir: str, client: object, model: object, collection_name: str, user_query: str, chunk_size: int, llm: str) -> None:
         self.file_dir = file_dir
         self.text_dir = text_dir
         self.client = client
@@ -181,13 +182,13 @@ class RAGPRocessing():
             for i, (embedding, doc) in enumerate(zip(embeddings, chunks))
         ]
 
-        client.upsert(collection_name=self.collection_name, points=points)
+        self.client.upsert(collection_name=self.collection_name, points=points)
 
         # Encode the query into an embedding
-        query_embedding = self.model.encode([user_query])[0]  # Flatten the query embedding
+        query_embedding = self.model.encode([self.user_query])[0]  # Flatten the query embedding
 
         # Perform the search
-        search_results = client.search(
+        search_results = self.client.search(
             collection_name=self.collection_name,
             query_vector=query_embedding,
             limit=1  # Number of nearest neighbors to return
@@ -226,6 +227,60 @@ class RAGPRocessing():
         else:
             extracted_text = ''
             return extracted_text
+        
+    def calculate_rag_metrics(self, response):
+
+        with open(f"{self.text_dir}/Error Codes.txt", 'r', encoding='utf-8') as file:
+            text = file.read()
+        
+        # Split the document into chunks (sentences in this case)
+        sentences = sent_tokenize(text)
+        response_sentences = sent_tokenize(response)
+
+        chunks = [' '.join(sentences[i:i + self.chunk_size]) for i in range(0, len(sentences), self.chunk_size)]
+        response_chunks = [' '.join(response_sentences[i:i + self.chunk_size]) for i in range(0, len(response_sentences), self.chunk_size)]
+        query_chunks = [' '.join(self.user_query[i:i + self.chunk_size]) for i in range(0, len(self.user_query), self.chunk_size)]
+
+        # Generate embeddings
+        embeddings = self.model.encode(chunks, show_progress_bar=True)
+
+        # Convert to a NumPy array
+        embeddings = np.array(embeddings)
+
+        # Encode the query into an embedding
+        query_embedding = self.model.encode(query_chunks, show_progress_bar=True)  # Flatten the query embedding
+        response_embeddings = self.model.encode(response_chunks, show_progress_bar=True)
+
+        # query_embedding = np.array(query_embedding)
+        response_embeddings = np.array(response_embeddings)
+
+        print(response_embeddings.shape)
+        print(embeddings.shape)
+        print(query_embedding.shape)
+
+        if embeddings.shape[0] == 1:
+            retrieved_embeddings = embeddings.reshape(1, -1)
+
+        if response_embeddings.shape[0] == 1:
+            response_embeddings = response_embeddings.reshape(1, -1)
+
+        # calculating cosine similarity score
+        score = cosine_similarity(response_embeddings, retrieved_embeddings)
+        print(score)
+
+        response_tokens = set(response.split())
+        context_tokens = set(' '.join(chunks).split())
+        # Precision: Proportion of response tokens found in the context
+        precision = len(response_tokens & context_tokens) / len(response_tokens)
+        # Recall: Proportion of context tokens found in the response
+        recall = len(response_tokens & context_tokens) / len(context_tokens)
+        print("Precision: ", precision)
+        print("Recall: ", recall)
+
+        relevancy_score = cosine_similarity(query_embedding, response_embeddings)[0]
+        print(relevancy_score)
+
+
 
 def main(file_dir, text_dir, client, model, collection_name, user_query, chunk_size, llm):
     pdoc = RAGPRocessing(file_dir, text_dir, client, model, collection_name, user_query, chunk_size, llm)
@@ -245,6 +300,7 @@ def main(file_dir, text_dir, client, model, collection_name, user_query, chunk_s
         else:
             print(f"Unsupported file format for {file_path}")
     result = pdoc.vector_db_creation()
+    pdoc.calculate_rag_metrics(result)
     return result
 
 if __name__=="__main__":

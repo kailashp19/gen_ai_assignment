@@ -28,6 +28,8 @@ model = SentenceTransformer('BAAI/bge-large-en-v1.5')
 # defining the name of the collection
 collection_name = "Technical_Support_Agent"
 
+chunk_size = 128
+
 def sqlite_call():
     sqlite_obj = SQLiteTest('Capstone data sets/telecom.csv')
     sqlite_obj.generate_table()
@@ -76,7 +78,7 @@ def supervisor_agent(state):
     full_message = f"{system_prompt_combined}\n\n{prompt_combined}\n\nUser Message: {human_message}"
     print(full_message)
     response = llm.generate_content(full_message)
-
+    
     next_agent = "FINISH"  # Default to FINISH to prevent looping if no valid response is found
 
     if response.candidates:
@@ -89,7 +91,7 @@ def supervisor_agent(state):
            result = sqlite_obj.process_user_query(llm, human_message)
            print(result)
         elif extracted_text in members[1]:
-            result = tech_main(file_dir, text_dir, client, model, collection_name, human_message, llm)
+            result = tech_main(file_dir, text_dir, client, model, collection_name, human_message, chunk_size, llm)
             print(result)
 
         else:
@@ -116,33 +118,35 @@ class AgentState(TypedDict):
     # The 'next' field indicates where to route to next
     next: str
 
-workflow = StateGraph(AgentState)
-workflow.add_node("Marketing_Agent", marketing_tool_node)
-workflow.add_node("Technical_Agent", technical_tool_node)
-workflow.add_node("supervisor", supervisor_agent)
+if __name__=="__main__":
+    query = "Enter your Query?"
+    workflow = StateGraph(AgentState)
+    workflow.add_node("Marketing_Agent", marketing_tool_node)
+    workflow.add_node("Technical_Agent", technical_tool_node)
+    workflow.add_node("supervisor", supervisor_agent)
 
-for member in members:
-    # We want our workers to ALWAYS "report back" to the supervisor when done
-    workflow.add_edge(member, "supervisor")
+    for member in members:
+        # We want our workers to ALWAYS "report back" to the supervisor when done
+        workflow.add_edge(member, "supervisor")
 
-# The supervisor populates the "next" field in the graph state
-# which routes to a node or finishes
-conditional_map = {k: k for k in members}
-conditional_map["FINISH"] = END
-workflow.add_conditional_edges("supervisor", lambda x: x["next"], conditional_map)
-# Finally, add entrypoint
-workflow.add_edge(START, "supervisor")
+    # The supervisor populates the "next" field in the graph state
+    # which routes to a node or finishes
+    conditional_map = {k: k for k in members}
+    conditional_map["FINISH"] = END
+    workflow.add_conditional_edges("supervisor", lambda x: x["next"], conditional_map)
+    # Finally, add entrypoint
+    workflow.add_edge(START, "supervisor")
 
-graph = workflow.compile()
+    graph = workflow.compile()
 
-for s in graph.stream(
-    {
-        "messages": [
-            HumanMessage(content="What is the sales for the year 2023?")
-        ]
-    }
-):
-    if "__end__" not in s:
-        print("Inside the function")
-        print(s)
-        print("----")
+    for s in graph.stream(
+        {
+            "messages": [
+                HumanMessage(content=input(query))
+            ]
+        }
+    ):
+        if "__end__" not in s:
+            print("Inside the function")
+            print(s)
+            print("----")
