@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import sqlite3
 
-class SQLiteTest():
+class SQLiteFlow():
     """
     A class which reads csv file(s) as an input and dumpt it into an SQLite Database. After saving the data into a table, when a
     user asks a query to fetch a particular data, we are providing a prompt which explicitly mentions to generate sql query.
@@ -79,7 +79,7 @@ class SQLiteTest():
                             3. The query response should only contain the column names from fact_marketing table and sql clause
                             which is acceptable by most of the databases.
                             4. You should be able to handle SELECT queries, filtering conditions, subqueries, various date function and aggregations.
-
+                            5. While selecting the columns, if any column is wrapped inside a function, then give it an alias.
                             user_query
                             {}
                         """).format(user_query)
@@ -144,10 +144,16 @@ class SQLiteTest():
         if sql_query:
             # Step 2: Execute the SQL query
             result = self.execute_sql_query(sql_query)
-            print(result)
 
             # Step 3: Generate a natural language response
             # response = self.generate_natural_language_response(result, user_input)
             return result
         else:
             return "Sorry, I couldn't understand your query."
+        
+if __name__=="__main__":
+    sqliteobj = SQLiteFlow('Capstone data sets/telecom.csv')
+    query = "how did the dollar-to-pound exchange rate impact sales in the second quarter of 2024?"
+    genai.configure(api_key='sk-')
+    llm = genai.GenerativeModel('gemini-1.5-flash')
+    sqliteobj.process_user_query(llm, query)
