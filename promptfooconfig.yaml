@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+# groq_api_key = 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
+description: "Code Optimization using Promptfoo"
+
+prompts:
+  - "Optimize the code with memory management improvements {{topic}}"
+  - "Refactor the code to remove redundancy and enhance performance {{topic}}"
+  - "Provide comments and documentations for the code {{topic}}"
+
+providers:
+  - id: google:gemini-1.5-flash
+    config:
+      apiKey: $GOOGLE_API_KEY
+tests:
+  - vars:
+      topic: |
+        def is_prime(n):
+            if n < 2:
+                return False
+            for i in range(2, int(n**0.5) + 1):  # Check divisors up to sqrt(n) for optimization
+                if n % i == 0:
+                    return False
+            return True
+        
+        # Example: Print all prime numbers up to a limit
+        def print_primes(limit):
+            for num in range(1, limit + 1):  # Iterate over numbers from 1 to limit
+                if is_prime(num):
+                    print(num)
+        
+        # Call the function
+        print("Prime numbers up to 20:")
+        print_primes(20)
+
+defaultTest:
+  provider: google:gemini-1.5-flash
+  config:
+    apiKey: $GOOGLE_API_KEY
+  assert:
+    # Ensure optimization and prime-related logic exists
+    - type: icontains
+      value: "prime"
+
+    # # Confirm that optimized loop or memory management logic is included
+    # - type: llm-rubric
+    #   value: "The code {{topic}} is optimized and properly documented without any elaboration."
+
+    # Check for usage of comments or explanations in the code
+    - type: icontains
+      value: '"""'
+
+    - type: guardrails
+
+    - type: answer-relevance
+      threshold: 0.5
+    
+    - type: select-best
+      value: 'choose the most concise and accurate response'

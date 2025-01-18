@@ -1,0 +1,1951 @@
+2025-01-10T17:36:40.146Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+2025-01-10T17:36:40.148Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599655-6f00114849f5b.py", line 4
+    return def factorial(n: int):
+           ^^^
+SyntaxError: invalid syntax
+2025-01-10T17:36:40.149Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599671-ad4aa72f53cac.py", line 4
+    return import math
+           ^^^^^^
+SyntaxError: invalid syntax
+2025-01-10T17:36:40.150Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599665-f4a1ba325224d.py", line 4
+    return return 1 if n == 0 else n * factorial(n - 1)
+           ^^^^^^
+SyntaxError: invalid syntax
+2025-01-10T17:36:40.151Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599678-aecdeac3bdeb1.py", line 4
+    return s = ''.join(filter(str.isalnum, s)).lower()
+             ^
+SyntaxError: invalid syntax
+2025-01-10T17:36:40.155Z [ERROR]: spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599685-e9b95ec68c315.py", line 4
+    return return s == s[::-1]
+           ^^^^^^
+SyntaxError: invalid syntax
+2025-01-10T17:36:40.159Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599671-ad4aa72f53cac.py", line 4
+      return import math
+             ^^^^^^
+2025-01-10T17:36:40.160Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736530599672-a5057ac4b378e.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736530599672-a5057ac4b378e.json'
+2025-01-10T17:36:40.160Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599671-ad4aa72f53cac.py", line 4
+      return import math
+             ^^^^^^
+2025-01-10T17:36:40.161Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599685-e9b95ec68c315.py", line 4
+      return return s == s[::-1]
+             ^^^^^^
+2025-01-10T17:36:40.161Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736530599686-e04bdfcaf2abe.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736530599686-e04bdfcaf2abe.json'
+2025-01-10T17:36:40.161Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599685-e9b95ec68c315.py", line 4
+      return return s == s[::-1]
+             ^^^^^^
+2025-01-10T17:36:40.162Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599665-f4a1ba325224d.py", line 4
+      return return 1 if n == 0 else n * factorial(n - 1)
+             ^^^^^^
+2025-01-10T17:36:40.162Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736530599666-d1062f9c85d54.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736530599666-d1062f9c85d54.json'
+2025-01-10T17:36:40.162Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599665-f4a1ba325224d.py", line 4
+      return return 1 if n == 0 else n * factorial(n - 1)
+             ^^^^^^
+2025-01-10T17:36:40.163Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599655-6f00114849f5b.py", line 4
+      return def factorial(n: int):
+             ^^^
+2025-01-10T17:36:40.163Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736530599656-56774305114b2.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736530599656-56774305114b2.json'
+2025-01-10T17:36:40.164Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599655-6f00114849f5b.py", line 4
+      return def factorial(n: int):
+             ^^^
+2025-01-10T17:36:40.171Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599678-aecdeac3bdeb1.py", line 4
+      return s = ''.join(filter(str.isalnum, s)).lower()
+               ^
+2025-01-10T17:36:40.173Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736530599679-2bf5504865dc2.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736530599679-2bf5504865dc2.json'
+2025-01-10T17:36:40.173Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736530599678-aecdeac3bdeb1.py", line 4
+      return s = ''.join(filter(str.isalnum, s)).lower()
+               ^
+2025-01-10T17:43:22.883Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+2025-01-10T17:43:22.885Z [ERROR]: spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531002645-d009c258978f7.py", line 10
+    assert locals()torial of 5 should be 120."
+                                             ^
+SyntaxError: unterminated string literal (detected at line 10)
+2025-01-10T17:43:22.895Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531002645-d009c258978f7.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:43:22.896Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531002645-a35dc9349a47d.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531002645-a35dc9349a47d.json'
+2025-01-10T17:43:22.896Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531002645-d009c258978f7.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:43:23.195Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+2025-01-10T17:43:23.196Z [ERROR]: spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003051-d17fb53676da7.py", line 10
+    assert locals()torial of 5 should be 120."
+                                             ^
+SyntaxError: unterminated string literal (detected at line 10)
+2025-01-10T17:43:23.201Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003053-ed99381b540dc.py", line 8, in main
+2025-01-10T17:43:23.202Z [ERROR]: exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+            ^^^^
+SyntaxError: invalid syntax
+2025-01-10T17:43:23.213Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003051-d17fb53676da7.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:43:23.214Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003052-cbb67a62990d2.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003052-cbb67a62990d2.json'
+2025-01-10T17:43:23.215Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003051-d17fb53676da7.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:43:23.222Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003053-ed99381b540dc.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-10T17:43:23.223Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003054-3e69da8ce07bb.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003054-3e69da8ce07bb.json'
+2025-01-10T17:43:23.223Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003053-ed99381b540dc.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-10T17:43:23.360Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+2025-01-10T17:43:23.360Z [ERROR]: return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003229-ec90dc8ef3613.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+            ^^^^
+SyntaxError: invalid syntax
+2025-01-10T17:43:23.374Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003229-ec90dc8ef3613.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-10T17:43:23.376Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003230-dc237b37f0591.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003230-dc237b37f0591.json'
+2025-01-10T17:43:23.376Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003229-ec90dc8ef3613.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-10T17:43:23.687Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+2025-01-10T17:43:23.688Z [ERROR]: File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003534-873b7de0a72b4.py", line 10
+    assert locals()torial of 5 should be 120."
+                                             ^
+SyntaxError: unterminated string literal (detected at line 10)
+2025-01-10T17:43:23.691Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+2025-01-10T17:43:23.692Z [ERROR]: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003536-e5bb02e558383.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 6
+    This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 6)
+2025-01-10T17:43:23.704Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003534-873b7de0a72b4.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:43:23.705Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003535-6be9f620582aa.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003535-6be9f620582aa.json'
+2025-01-10T17:43:23.705Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003534-873b7de0a72b4.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:43:23.711Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003536-e5bb02e558383.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-10T17:43:23.712Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003537-f14c3cb85d8ee.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003537-f14c3cb85d8ee.json'
+2025-01-10T17:43:23.712Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003536-e5bb02e558383.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-10T17:43:23.864Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+2025-01-10T17:43:23.864Z [ERROR]: ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003717-79b823805bd88.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 6
+    This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 6)
+2025-01-10T17:43:23.880Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003717-79b823805bd88.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-10T17:43:23.881Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003718-962dd5c30d5d3.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531003718-962dd5c30d5d3.json'
+2025-01-10T17:43:23.882Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531003717-79b823805bd88.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-10T17:43:26.757Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+2025-01-10T17:43:26.758Z [ERROR]: return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531006614-5c25eb883622f.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several ways exist to generate the first 10 Fibonacci numbers in Python. Here are two approaches: iterative and recursive.  The iterative approach is generally preferred for its efficiency, especially for larger Fibonacci sequences.
+            ^^^^
+SyntaxError: invalid syntax
+2025-01-10T17:43:26.774Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531006614-5c25eb883622f.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to generate the first 10 Fibonacci numbers in Python. Here are two approaches: iterative and recursive.  The iterative approach is generally preferred for its efficiency, especially for larger Fibonacci sequences.
+              ^^^^
+2025-01-10T17:43:26.775Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531006614-fd2ffb1c554da.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531006614-fd2ffb1c554da.json'
+2025-01-10T17:43:26.775Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531006614-5c25eb883622f.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to generate the first 10 Fibonacci numbers in Python. Here are two approaches: iterative and recursive.  The iterative approach is generally preferred for its efficiency, especially for larger Fibonacci sequences.
+              ^^^^
+2025-01-10T17:43:29.390Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+2025-01-10T17:43:29.390Z [ERROR]: return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531009257-6e1a2b782a6d2.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several Python functions can generate the first *n* Fibonacci numbers. Here are a few options, each with different strengths:
+            ^^^^^^
+SyntaxError: invalid syntax
+2025-01-10T17:43:29.404Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531009257-6e1a2b782a6d2.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several Python functions can generate the first *n* Fibonacci numbers. Here are a few options, each with different strengths:
+              ^^^^^^
+2025-01-10T17:43:29.406Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531009259-91ae475fda0d2.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531009259-91ae475fda0d2.json'
+2025-01-10T17:43:29.406Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531009257-6e1a2b782a6d2.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several Python functions can generate the first *n* Fibonacci numbers. Here are a few options, each with different strengths:
+              ^^^^^^
+2025-01-10T17:52:46.184Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565909-aef258ff02425.py", line 8, in main
+2025-01-10T17:52:46.186Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565917-784e687b864b2.py", line 10
+    assert locals()torial of 5 should be 120."
+                                             ^
+SyntaxError: unterminated string literal (detected at line 10)
+2025-01-10T17:52:46.188Z [ERROR]: exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+            ^^^^
+SyntaxError: invalid syntax
+2025-01-10T17:52:46.190Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+2025-01-10T17:52:46.190Z [ERROR]: result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565927-0ba367dfaf7f4.py", line 10
+    assert locals()torial of 5 should be 120."
+                                             ^
+SyntaxError: unterminated string literal (detected at line 10)
+2025-01-10T17:52:46.197Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565909-aef258ff02425.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-10T17:52:46.198Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531565910-b3c997d6fe373.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531565910-b3c997d6fe373.json'
+2025-01-10T17:52:46.198Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565909-aef258ff02425.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-10T17:52:46.210Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565917-784e687b864b2.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:52:46.210Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531565918-80c01f387598f.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531565918-80c01f387598f.json'
+2025-01-10T17:52:46.211Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565917-784e687b864b2.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:52:46.217Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565900-af41042046552.py", line 10
+    assert locals()torial of 5 should be 120."
+                                             ^
+SyntaxError: unterminated string literal (detected at line 10)
+2025-01-10T17:52:46.220Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565927-0ba367dfaf7f4.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:52:46.220Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531565928-455fd2d572ab5.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531565928-455fd2d572ab5.json'
+2025-01-10T17:52:46.221Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565927-0ba367dfaf7f4.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:52:46.227Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565900-af41042046552.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:52:46.228Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531565901-31dd18fc64651.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531565901-31dd18fc64651.json'
+2025-01-10T17:52:46.228Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531565900-af41042046552.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-10T17:52:46.413Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+2025-01-10T17:52:46.414Z [ERROR]: return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566233-f9a5f5317fc04.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several ways exist to generate the first 10 Fibonacci numbers in Python. Here are two approaches: iterative and recursive.  The iterative approach is generally preferred for its efficiency, especially for larger Fibonacci sequences.
+            ^^^^
+SyntaxError: invalid syntax
+2025-01-10T17:52:46.417Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+2025-01-10T17:52:46.417Z [ERROR]: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566248-65f2c84a7bd67.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+            ^^^^
+SyntaxError: invalid syntax
+2025-01-10T17:52:46.426Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+2025-01-10T17:52:46.427Z [ERROR]: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566240-78d67975e612f.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 6
+    This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 6)
+2025-01-10T17:52:46.432Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566233-f9a5f5317fc04.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to generate the first 10 Fibonacci numbers in Python. Here are two approaches: iterative and recursive.  The iterative approach is generally preferred for its efficiency, especially for larger Fibonacci sequences.
+              ^^^^
+2025-01-10T17:52:46.434Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531566234-d113ca770122a.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531566234-d113ca770122a.json'
+2025-01-10T17:52:46.434Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566233-f9a5f5317fc04.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to generate the first 10 Fibonacci numbers in Python. Here are two approaches: iterative and recursive.  The iterative approach is generally preferred for its efficiency, especially for larger Fibonacci sequences.
+              ^^^^
+2025-01-10T17:52:46.442Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566248-65f2c84a7bd67.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-10T17:52:46.443Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531566249-b49b4c5def011.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531566249-b49b4c5def011.json'
+2025-01-10T17:52:46.443Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566248-65f2c84a7bd67.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-10T17:52:46.449Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566256-8d49478c98cfd.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several Python functions can generate the first *n* Fibonacci numbers. Here are a few options, each with different strengths:
+            ^^^^^^
+SyntaxError: invalid syntax
+2025-01-10T17:52:46.450Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566240-78d67975e612f.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-10T17:52:46.451Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531566241-52ec8c70329e1.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531566241-52ec8c70329e1.json'
+2025-01-10T17:52:46.451Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566240-78d67975e612f.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-10T17:52:46.465Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566256-8d49478c98cfd.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several Python functions can generate the first *n* Fibonacci numbers. Here are a few options, each with different strengths:
+              ^^^^^^
+2025-01-10T17:52:46.466Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531566256-6eaa19f58f941.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531566256-6eaa19f58f941.json'
+2025-01-10T17:52:46.466Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566256-8d49478c98cfd.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several Python functions can generate the first *n* Fibonacci numbers. Here are a few options, each with different strengths:
+              ^^^^^^
+2025-01-10T17:52:46.602Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+2025-01-10T17:52:46.603Z [ERROR]: return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566457-6317262933b48.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 6
+    This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 6)
+2025-01-10T17:52:46.619Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566457-6317262933b48.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-10T17:52:46.621Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531566458-309ee1932c606.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736531566458-309ee1932c606.json'
+2025-01-10T17:52:46.621Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736531566457-6317262933b48.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-12T17:37:53.644Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+2025-01-12T17:37:53.649Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472606-5a0b77545ea54.py", line 10
+    assert locals()torial of 5 should be 120."
+                                             ^
+SyntaxError: unterminated string literal (detected at line 10)
+2025-01-12T17:37:53.652Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472640-c221c37699e01.py", line 10
+    assert locals()torial of 5 should be 120."
+                                             ^
+SyntaxError: unterminated string literal (detected at line 10)
+2025-01-12T17:37:53.655Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472625-642503bbb53ed.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+            ^^^^
+SyntaxError: invalid syntax
+2025-01-12T17:37:53.663Z [ERROR]: result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+    spec.loader.exec_module(script_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472658-14775c08e07f7.py", line 10
+    assert locals()torial of 5 should be 120."
+                                             ^
+SyntaxError: unterminated string literal (detected at line 10)
+2025-01-12T17:37:53.679Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472658-14775c08e07f7.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-12T17:37:53.682Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703472660-5fee4c3f70bb6.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703472660-5fee4c3f70bb6.json'
+2025-01-12T17:37:53.684Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472658-14775c08e07f7.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-12T17:37:53.720Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472606-5a0b77545ea54.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-12T17:37:53.724Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703472610-badeedc7e9378.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703472610-badeedc7e9378.json'
+2025-01-12T17:37:53.726Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472606-5a0b77545ea54.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-12T17:37:53.747Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472640-c221c37699e01.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-12T17:37:53.751Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703472643-9e9a59a44d1d3.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703472643-9e9a59a44d1d3.json'
+2025-01-12T17:37:53.752Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 10)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 10)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 18, in call_method
+      spec.loader.exec_module(script_module)
+    File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+    File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+    File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+    File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472640-c221c37699e01.py", line 10
+      assert locals()torial of 5 should be 120."
+                                               ^
+2025-01-12T17:37:53.769Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472625-642503bbb53ed.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-12T17:37:53.771Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703472627-576f2c3a9052f.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703472627-576f2c3a9052f.json'
+2025-01-12T17:37:53.773Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703472625-642503bbb53ed.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-12T17:37:54.282Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+2025-01-12T17:37:54.284Z [ERROR]: return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473811-ca118183bd4be.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 6
+    This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 6)
+2025-01-12T17:37:54.337Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473811-ca118183bd4be.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-12T17:37:54.339Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703473813-1f7abde76a32d.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703473813-1f7abde76a32d.json'
+2025-01-12T17:37:54.342Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473811-ca118183bd4be.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-12T17:37:54.368Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473833-e1cafdb0dc1fc.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+            ^^^^
+SyntaxError: invalid syntax
+2025-01-12T17:37:54.371Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473852-03b3ad0a99e2c.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several Python functions can generate the first *n* Fibonacci numbers. Here are a few options, each with different strengths:
+            ^^^^^^
+SyntaxError: invalid syntax
+2025-01-12T17:37:54.417Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473833-e1cafdb0dc1fc.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-12T17:37:54.419Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703473836-879fe4ce6b25a.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703473836-879fe4ce6b25a.json'
+2025-01-12T17:37:54.422Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473833-e1cafdb0dc1fc.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to write a Python function to calculate the factorial. Here are three options, each with slightly different characteristics:
+              ^^^^
+2025-01-12T17:37:54.443Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473852-03b3ad0a99e2c.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several Python functions can generate the first *n* Fibonacci numbers. Here are a few options, each with different strengths:
+              ^^^^^^
+2025-01-12T17:37:54.446Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703473855-a03cc70b90236.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703473855-a03cc70b90236.json'
+2025-01-12T17:37:54.448Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473852-03b3ad0a99e2c.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several Python functions can generate the first *n* Fibonacci numbers. Here are a few options, each with different strengths:
+              ^^^^^^
+2025-01-12T17:37:54.470Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473872-9c065034fb7ad.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 1
+    Several ways exist to generate the first 10 Fibonacci numbers in Python. Here are two approaches: iterative and recursive.  The iterative approach is generally preferred for its efficiency, especially for larger Fibonacci sequences.
+            ^^^^
+SyntaxError: invalid syntax
+2025-01-12T17:37:54.481Z [ERROR]: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473872-9c065034fb7ad.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to generate the first 10 Fibonacci numbers in Python. Here are two approaches: iterative and recursive.  The iterative approach is generally preferred for its efficiency, especially for larger Fibonacci sequences.
+              ^^^^
+2025-01-12T17:37:54.485Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703473874-c064d850f3a5c.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703473874-c064d850f3a5c.json'
+2025-01-12T17:37:54.491Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: invalid syntax
+Stack Trace: Error: SyntaxError: invalid syntax
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703473872-9c065034fb7ad.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 1
+      Several ways exist to generate the first 10 Fibonacci numbers in Python. Here are two approaches: iterative and recursive.  The iterative approach is generally preferred for its efficiency, especially for larger Fibonacci sequences.
+              ^^^^
+2025-01-12T17:37:54.770Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+2025-01-12T17:37:54.772Z [ERROR]: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703474378-006ab1682a3b4.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 6
+    This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 6)
+2025-01-12T17:37:54.817Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703474378-006ab1682a3b4.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-12T17:37:54.819Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703474383-6949eaf1ee99c.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1736703474383-6949eaf1ee99c.json'
+2025-01-12T17:37:54.821Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1736703474378-006ab1682a3b4.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-16T16:32:45.916Z [ERROR]: Error executing Python code: Error: Python 3 not found. Tried "python" and "py -3". Please ensure Python 3 is installed and set the PROMPTFOO_PYTHON environment variable to your Python 3 executable path (e.g., 'C:\Python39\python.exe').
+2025-01-16T16:32:45.955Z [ERROR]: Error executing Python code: Error: Python 3 not found. Tried "python" and "py -3". Please ensure Python 3 is installed and set the PROMPTFOO_PYTHON environment variable to your Python 3 executable path (e.g., 'C:\Python39\python.exe').
+2025-01-16T16:32:45.976Z [ERROR]: Error executing Python code: Error: Python 3 not found. Tried "python" and "py -3". Please ensure Python 3 is installed and set the PROMPTFOO_PYTHON environment variable to your Python 3 executable path (e.g., 'C:\Python39\python.exe').
+2025-01-16T16:32:45.996Z [ERROR]: Error executing Python code: Error: Python 3 not found. Tried "python" and "py -3". Please ensure Python 3 is installed and set the PROMPTFOO_PYTHON environment variable to your Python 3 executable path (e.g., 'C:\Python39\python.exe').
+2025-01-16T16:32:46.656Z [ERROR]: Error executing Python code: Error: Python 3 not found. Tried "python" and "py -3". Please ensure Python 3 is installed and set the PROMPTFOO_PYTHON environment variable to your Python 3 executable path (e.g., 'C:\Python39\python.exe').
+2025-01-16T16:32:46.696Z [ERROR]: Error executing Python code: Error: Python 3 not found. Tried "python" and "py -3". Please ensure Python 3 is installed and set the PROMPTFOO_PYTHON environment variable to your Python 3 executable path (e.g., 'C:\Python39\python.exe').
+2025-01-16T16:32:46.719Z [ERROR]: Error executing Python code: Error: Python 3 not found. Tried "python" and "py -3". Please ensure Python 3 is installed and set the PROMPTFOO_PYTHON environment variable to your Python 3 executable path (e.g., 'C:\Python39\python.exe').
+2025-01-16T16:32:46.743Z [ERROR]: Error executing Python code: Error: Python 3 not found. Tried "python" and "py -3". Please ensure Python 3 is installed and set the PROMPTFOO_PYTHON environment variable to your Python 3 executable path (e.g., 'C:\Python39\python.exe').
+2025-01-16T16:32:47.932Z [ERROR]: Traceback (most recent call last):
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+2025-01-16T16:32:47.934Z [ERROR]: ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1737045166760-76fec52a1b374.py", line 8, in main
+    exec(output)  # Executes the generated code
+    ^^^^^^^^^^^^
+  File "<string>", line 6
+    This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                  ^
+SyntaxError: unterminated string literal (detected at line 6)
+2025-01-16T16:32:47.984Z [ERROR]: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1737045166760-76fec52a1b374.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-16T16:32:47.988Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1737045166763-c565d30c622be.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1737045166763-c565d30c622be.json'
+2025-01-16T16:32:47.991Z [ERROR]: Error executing Python code: Error: Error running Python script: SyntaxError: unterminated string literal (detected at line 6)
+Stack Trace: Error: SyntaxError: unterminated string literal (detected at line 6)
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at ChildProcess.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:185:13)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1737045166760-76fec52a1b374.py", line 8, in main
+      exec(output)  # Executes the generated code
+      ^^^^^^^^^^^^
+    File "<string>", line 6
+      This method iterates through all numbers from 2 up to the square root of the input number.  It's simple but becomes inefficient for very large numbers.
+                                                                                                    ^
+2025-01-16T17:54:16.245Z [ERROR]: Traceback (most recent call last):
+2025-01-16T17:54:16.250Z [ERROR]: File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+    result = call_method(script_path, method_name, *data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+    return method_to_call(*args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1737050054866-5654a2bd4670d.py", line 6, in main
+    assert match, "No function defined in the output."
+           ^^^^^
+AssertionError: No function defined in the output.
+2025-01-16T17:54:16.255Z [ERROR]: Error running Python script: AssertionError: No function defined in the output.
+Stack Trace: Error: AssertionError: No function defined in the output.
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at Socket.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:164:17)
+    at Socket.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1737050054866-5654a2bd4670d.py", line 6, in main
+      assert match, "No function defined in the output."
+             ^^^^^
+2025-01-16T17:54:16.256Z [ERROR]: Error removing C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1737050054944-37e3b57232be5.json: Error: ENOENT: no such file or directory, unlink 'C:\Users\KAILAS~1.PAT\AppData\Local\Temp\promptfoo-python-output-json-1737050054944-37e3b57232be5.json'
+2025-01-16T17:54:16.257Z [ERROR]: Error executing Python code: Error: Error running Python script: AssertionError: No function defined in the output.
+Stack Trace: Error: AssertionError: No function defined in the output.
+    at PythonShell.parseError (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:303:21)
+    at terminateIfNeeded (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:193:32)
+    at Socket.<anonymous> (C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\python-shell\index.js:164:17)
+    at Socket.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    --Python Traceback: --
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 39, in <module>
+      result = call_method(script_path, method_name, *data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\kailash.patel\AppData\Local\npm-cache\_npx\81bbc6515d992ace\node_modules\promptfoo\dist\src\python\wrapper.py", line 28, in call_method
+      return method_to_call(*args)
+             ^^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1737050054866-5654a2bd4670d.py", line 6, in main
+      assert match, "No function defined in the output."
+             ^^^^^
+2025-01-16T17:56:44.423Z [ERROR]: C:\Users\KAILAS~1.PAT\AppData\Local\Temp\temp-python-code-1737050204181-a48d9a077c9ff.py:4: SyntaxWarning: invalid escape sequence '\w'
+  '''
+2025-01-17T18:07:58.548Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-17T18:07:58.567Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-17T18:07:58.584Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-17T18:08:25.311Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-17T18:08:25.335Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-17T18:08:25.354Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-17T18:08:53.982Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-17T18:08:54.006Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-17T18:08:54.028Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-17T18:14:05.203Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-17T18:14:05.259Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-17T18:14:05.282Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:07:23.481Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:07:23.580Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:07:23.597Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:09:41.537Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:09:41.546Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:09:41.551Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:10:02.360Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:10:02.379Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:10:02.387Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:12:25.897Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:12:25.917Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:12:25.924Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:14:58.203Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:14:58.223Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:14:58.230Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:25:23.041Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:25:23.063Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:25:23.695Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:46:34.295Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:46:34.336Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:46:34.473Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:47:05.524Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:47:05.532Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:47:05.538Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:49:23.250Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:49:23.261Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T04:49:23.268Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T05:20:08.508Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T05:20:08.529Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T05:20:08.705Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:02:46.171Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:02:46.233Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:02:46.307Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:03:21.589Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:03:21.609Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:03:21.625Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:04:08.674Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:04:08.696Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:04:08.715Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:10:44.342Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:10:44.421Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:10:44.439Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:11:21.857Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:11:21.928Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:11:21.944Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:14:00.398Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:14:00.471Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:14:00.498Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:14:23.147Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:14:23.224Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:14:23.256Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:19:33.631Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:19:33.672Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:19:33.706Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:22:12.292Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:22:12.366Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:22:12.392Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:28:23.352Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:28:23.413Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:28:23.434Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:31:49.871Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:31:49.935Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:31:49.958Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:42:29.408Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:42:29.440Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+2025-01-18T08:42:29.454Z [ERROR]: Groq API call error: Error: 401 {"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
