@@ -1,0 +1,50 @@
+RAG:
+  RAGAS:
+    WithGT:
+      - FactualCorrectness
+      - Faithfulness
+      - AnswerRelevancy
+      - LLMContextPrecisionWithReference
+    WithoutGT:
+      - LLMContextPrecisionWithoutReference
+      - Faithfulness
+      - AnswerRelevancy
+  DeepEval:
+    WithGT:
+      - ContextualRecallMetric
+      - FaithfulnessMetric
+      - AnswerRelevancyMetric
+      - ContextualRelevancyMetric
+    WithoutGT:
+      - ContextualRelevancyMetric
+      - FaithfulnessMetric
+      - AnswerRelevancyMetric
+
+txt2SQL:
+  RGAS:
+    - L
+    - M
+    - N
+    - O
+    - P
+  Trulen:
+    - L
+    - M
+    - P
+
+codegen:
+  Trulen:
+    - sold
+    - buy
+    - retail
+    - wholesale
+  DeeEval:
+    - cric
+    - sit
+    - fat
+
+text_summarization:
+  DeeEval:
+    - party
+    - hall
+    - music
